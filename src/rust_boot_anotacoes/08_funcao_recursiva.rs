@@ -15,3 +15,5 @@ fn mostra_na_tela(i: i32) -> i32 {
 
     mostra_na_tela(i + 1) // Chama a si mesma com o próximo valor
 }
+
+
