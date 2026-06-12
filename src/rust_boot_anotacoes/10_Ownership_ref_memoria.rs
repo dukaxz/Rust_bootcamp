@@ -37,3 +37,19 @@ x -> 4
 Enquanto y existir, ela depende da existência de x.
 Rust garante que uma referência nunca aponte para um valor já destruído.
 */
+
+//==========================================================================
+
+// Desreferenciação
+
+fn main() {
+    let x: i32 = 4;
+    let y: &i32 = &x; // Referencia 1
+
+    let t: &i32 = y; // Referencia 2
+
+    let w: i32 = *y; // Desreferenciação da memoria do y
+    println!("Endereço de: x {}, y {}, t {}, w {}", x, y, t, w);
+    println!("Endereço de: x {:p}, y {:p}, t {:p}, w {:p}", &x, &y, &t, &w);
+
+}
