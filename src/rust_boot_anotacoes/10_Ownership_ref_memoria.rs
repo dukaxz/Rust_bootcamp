@@ -52,4 +52,28 @@ fn main() {
     println!("Endereço de: x {}, y {}, t {}, w {}", x, y, t, w);
     println!("Endereço de: x {:p}, y {:p}, t {:p}, w {:p}", &x, &y, &t, &w);
 
+    // diferente desse padrao, com * sendo desreferenciação e multiplicação
+    // let j = 8;
+    // let u = 1;
+    // let i = u * j;
 }
+
+// ===========================================================================
+
+fn main() {
+    let mut x = 4;  // Declara x como var mutavel
+    let y = &x;
+
+    println!("O valor de x é {}", x);
+    println!("O valor de y é {}", y);
+    
+    // Modifica o x, invalidando a referenciação do y
+    x = 42;
+
+    // Resultando em erro com y se tornando uma referencia invalida, erro de compilação
+    // Borrowed
+    println!("O valor de y é {}", y);
+    println!("O valor de y é {}", x);
+
+}
+
