@@ -46,7 +46,7 @@ fn execute_equacao_segundo_grau() {
 fn menu() {
     loop {
     println!("\nEquação do segundo grau!!");
-    println!("\n1.Execute o calculo\nSair.");
+    println!("\n1.Execute o calculo\n2.Sair.");
     
     let mut opcao: String = String::new();
         io::stdin().read_line(&mut opcao).expect("Erro...");

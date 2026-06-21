@@ -34,8 +34,6 @@ fn soma(x: i16, y: i16) -> i16 {
 }
 
 
-
-
 // ========================================
 // EXEMPLO 2 - FUNÇÃO QUE RETORNA UM VALOR
 // E ESCOPO DE VARIÁVEIS
