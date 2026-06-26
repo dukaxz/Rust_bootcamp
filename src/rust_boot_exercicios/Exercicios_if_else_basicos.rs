@@ -96,5 +96,18 @@ fn main() {
 
 }
 
+//==============================================================================================
 
+fn tem_desconto(vip: bool, em_promocao: bool) -> bool {
+    // TODO: retorne true se vip OU em_promocao for true
+    if vip || em_promocao { true 
+    } else { false }
 
+    // ou vip || em_promocao # retorna a mesma coisa 
+}
+
+fn main() {
+    println!("{}", tem_desconto(true, false));  // true
+    println!("{}", tem_desconto(false, true));  // true
+    println!("{}", tem_desconto(false, false)); // false
+}
